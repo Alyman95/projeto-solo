@@ -1,7 +1,10 @@
-
+import {useState} from 'react'
 import './style.css'
 import vite from "../src/assets/react.svg";
 function Home() {
+  function CadastrarNomes(){
+  const [cadastro, SetCadastro] = useState('')
+  }
 
   const users = [
     {
@@ -25,10 +28,11 @@ function Home() {
       email: "luizinhodaregional@gmail.com"
     }
   ];
+  
   return (
 
 
-    <div className="container">
+   <div className="container">
 
       <form>
 
@@ -55,6 +59,5 @@ function Home() {
       ))}
     </div>
   );
-}
-
-export default Home;
+      }
+      export default Home;
